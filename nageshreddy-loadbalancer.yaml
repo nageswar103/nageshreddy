@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nageshreddy-service
+  namespace: nageshreddy
+spec:
+  type: LoadBalancer
+  selector:
+    app: nageshreddy
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80 
+
+
